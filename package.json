@@ -5,6 +5,12 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^1.0.0",
+    "@chakra-ui/icons": "^1.0.1",
+    "@chakra-ui/react": "^1.0.1",
+    "@emotion/react": "^11.1.1",
+    "@emotion/styled": "^11.0.0",
+    "framer-motion": "^2.9.4",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
@@ -14,12 +20,12 @@
     "gatsby-source-filesystem": "^2.5.0",
     "gatsby-transformer-sharp": "^2.6.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "prettier": "2.2.0"
   },
   "keywords": [
     "gatsby"

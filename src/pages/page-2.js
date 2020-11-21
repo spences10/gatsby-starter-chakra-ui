@@ -1,16 +1,25 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import { Heading, Link, Text } from '@chakra-ui/react'
+import { Link as GatsbyLink } from 'gatsby'
+import React from 'react'
+import SEO from '../components/seo'
 
 const SecondPage = () => (
-  <Layout>
+  <>
     <SEO title="Page two" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </Layout>
+    <Heading>Hi from the second page</Heading>
+    <Text fontSize="xl" my={5}>
+      Welcome to page 2
+    </Text>
+    <Link
+      as={GatsbyLink}
+      to="/"
+      color="purple.500"
+      fontSize="xl"
+      textDecor="underline"
+    >
+      Go back to the homepage
+    </Link>
+  </>
 )
 
 export default SecondPage

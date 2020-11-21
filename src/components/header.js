@@ -1,34 +1,27 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import { Box, Heading, Link } from '@chakra-ui/react'
+import { Link as GatsbyLink } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import ThemeToggle from './theme-toggle'
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
+  <Box as="header" background="rebeccapurple" marginBottom="1.45rem">
+    <Box as="div" m="0 auto" maxW="960px" p="1.45rem 1.0875rem">
+      <Heading margin="0">
         <Link
+          as={GatsbyLink}
           to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
+          color="white"
+          _hover={{ textDecor: 'none' }}
         >
           {siteTitle}
         </Link>
-      </h1>
-    </div>
-  </header>
+      </Heading>
+    </Box>
+    <Box as="div" position="fixed" right="20px" top="20px">
+      <ThemeToggle />
+    </Box>
+  </Box>
 )
 
 Header.propTypes = {

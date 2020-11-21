@@ -5,12 +5,11 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import { Box, Link } from '@chakra-ui/react'
+import { graphql, useStaticQuery } from 'gatsby'
+import PropTypes from 'prop-types'
+import React from 'react'
+import Header from './header'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -26,22 +25,26 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
+      <Box
+        as="div"
+        margin="0 auto"
+        maxWidth="960px"
+        padding="0 1.0875rem 1.45rem"
       >
-        <main>{children}</main>
-        <footer style={{
-          marginTop: `2rem`
-        }}>
+        <Box as="main">{children}</Box>
+        <Box as="footer" marginTop="2rem" fontSize="xl">
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
+          <Link
+            isExternal
+            textDecor="underline"
+            color="purple.500"
+            href="https://www.gatsbyjs.com"
+          >
+            Gatsby
+          </Link>
+        </Box>
+      </Box>
     </>
   )
 }
