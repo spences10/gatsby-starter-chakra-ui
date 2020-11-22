@@ -1,9 +1,13 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-starter-chakra-ui",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter to get up and developing quickly with Gatsby and Chakra UI",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+    "author": {
+    "name": "Scott Spence",
+    "email": "yo@scottspence.dev",
+    "url": "https://scottspence.com"
+  },
   "dependencies": {
     "@chakra-ui/gatsby-plugin": "^1.0.0",
     "@chakra-ui/icons": "^1.0.1",
