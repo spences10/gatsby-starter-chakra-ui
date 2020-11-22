@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  Gatsby starter Chakra UI
 </h1>
 
 Based off of the [Gatsby Starter Default] template.
