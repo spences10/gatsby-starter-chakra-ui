@@ -11,7 +11,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "dev": "gatsby develop",
@@ -52,9 +52,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "git+https://github.com/spences10/gatsby-starter-chakra-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  }
+    "url": "https://github.com/spences10/gatsby-starter-chakra-ui/issues"
+  },
+  "homepage": "https://github.com/spences10/gatsby-starter-chakra-ui#readme"
 }
